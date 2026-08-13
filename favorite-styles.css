@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* General page styling */
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background-color: #2f5d8a;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation bar background */
+.bg-dark {
+    background-color: #1f3a5f !important;
+}
+
+/* Whole top group centered like the example */
+.nav-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+/* Photoshop Experience text */
+.navbar-brand {
+    color: #ffffff;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+/* Remove link look if Dreamweaver still treats it like one */
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Nav row should size to its content, not stretch across page */
+.custom-nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+/* Do NOT stretch items across full width */
+.custom-nav .nav-item {
+    flex: 0 0 auto;
+    display: flex;
+    margin: 0;
+}
+
+/* Button styling */
+.custom-nav .nav-link {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    color: #ffffff;
+    background-color: #4d7db3;
+    border: 1px solid #2f5d8a;
+    text-align: center;
+    text-decoration: none;
+    min-height: 56px;
+    min-width: 92px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Hover effect */
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link:focus {
+    background-color: #5d8cc0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Active/current page link */
+.custom-nav .nav-link.active,
+.custom-nav .active > .nav-link {
+    background-color: #5d8cc0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* Blue banner area below navbar */
+header {
+    background-color: #2f5d8a;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+/* White line between navbar and banner image */
+header::before {
+    content: "";
+    display: block;
+    width: 92%;
+    max-width: 1140px;
+    margin: 0 auto 18px auto;
+    border-top: 2px solid #ffffff;
+}
+
+/* Banner image box */
+.banner-text {
+    max-width: 1140px;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url("images/headline.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+/* Main banner heading */
+.banner-text h2 {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    margin: 0;
+
+    font-size: 2.2rem;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 600;
+
+    color: #ffffff;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+    line-height: 1.1;
+}
+
+/* Banner subtitle */
+.banner-text p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    margin: 0;
+
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+/* Main content wrapper */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0;
+}
+
+/* White content box inside main */
+.content-area {
+    background-color: #F5EBEC;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Content headings */
+.content-area h1 {
+    color: #1f3a5f;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content-area h2 {
+    color: #1f3a5f;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+/* Paragraphs in content */
+.content-area p {
+    font-size: 1rem;
+    color: #222;
+    margin-top: 15px;
+}
+
+/* Link list in content area */
+.content-area ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-area li {
+    margin-bottom: 6px;
+}
+
+/* Links in content area */
+.content-area a {
+    color: #2f5d8a;
+    text-decoration: none;
+}
+
+/* Hover effect for links in main content */
+.content-area a:hover,
+.content-area a:focus {
+    color: #1f3a5f;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: 30px;
+}
